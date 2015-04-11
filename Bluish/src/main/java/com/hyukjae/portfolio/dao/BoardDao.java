@@ -1,13 +1,14 @@
 package com.hyukjae.portfolio.dao;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
+import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
-import org.springframework.jdbc.core.namedparam.BeanPropertySqlParameterSource;
-import org.springframework.jdbc.core.namedparam.SqlParameterSource;
 import org.springframework.stereotype.Repository;
 
 import com.hyukjae.portfolio.bean.BoardBean;
@@ -15,7 +16,86 @@ import com.hyukjae.portfolio.bean.BoardBean;
 @Repository
 public class BoardDao{
 	
-	private JdbcTemplate jdbcTemplate;
+	private SqlSession sqlSession;    
+    
+    public void setSqlSession(SqlSession sqlSession)
+    {
+    	this.sqlSession = sqlSession;
+    }
+
+    public List<BoardBean> getTotalBoard(int start, int end, String tblName) 
+    {
+    	Map<String, Object> map = new HashMap<String, Object>();
+    	map.put("tblName", tblName);
+    	map.put("start", start);
+    	map.put("end", end);
+    	return sqlSession.selectList("query.selectTotalBoard", map);
+    }
+
+    public int getTotalCount(String tblName){
+
+    	return sqlSession.selectOne("query.selectTotalCount", tblName);
+	}
+    
+    public BoardBean getOneBoard(String num, String tblName){
+    	
+    	Map<String, String> map = new HashMap<String, String>();
+    	map.put("tblName", tblName);
+    	map.put("num", num);
+    	
+		setCount(map);	
+
+		return sqlSession.selectOne("query.selectOneBoard", map);
+	}
+    
+    public void setCount(Map<String, String> map){
+    	
+    	sqlSession.update("query.updateCount", map);
+	}
+    
+    public void writeBoard(BoardBean bean, String tblName){
+    	
+		int ref = sqlSession.selectOne("selectMaxNum", tblName);
+		if(ref > 0)
+			ref = ref + 1;
+		else
+			ref = 1;
+		
+		Map<String, Object> map = new HashMap<String, Object>();
+    	map.put("tblName", tblName);
+    	map.put("bean", bean);
+    	map.put("ref", ref);
+    	
+		sqlSession.insert("query.insertBoard", map);
+    }
+
+    public int getMaxNum(String tblName){
+    	
+    	return sqlSession.selectOne("query.selectMaxNum", tblName);
+
+    }
+
+    public void deleteBoard(String num, String tblName){
+    	
+    	Map<String, String> map = new HashMap<String, String>();
+    	map.put("tblName", tblName);
+    	map.put("num", num);
+    	
+    	sqlSession.delete("query.deleteBoard", map);
+    }
+    
+    public void updateBoard(String num, String subject, String content, String tblName){
+    	
+    	Map<String, String> map = new HashMap<String, String>();
+    	map.put("tblName", tblName);
+    	map.put("subject", subject);
+    	map.put("content", content);
+    	map.put("num", num);
+
+    	sqlSession.update("query.updateBoard", map);
+    }
+    
+/*	private JdbcTemplate jdbcTemplate;
 	
     @Autowired
 	public void setJdbcTemplate(JdbcTemplate jdbcTemplate) {
@@ -100,5 +180,5 @@ public class BoardDao{
     	String sql = "update " + tblName + " set subject=?, content=? where num=?";
 
     	jdbcTemplate.update(sql, subject, content, num);
-    }
+    }*/
 }

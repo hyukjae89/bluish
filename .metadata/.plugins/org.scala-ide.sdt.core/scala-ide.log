@@ -1,0 +1,51 @@
+2015-04-10 20:39:47,709 ERROR [Worker-87] - System.err - [Fatal Error] :1:39: 예기치 않은 파일의 끝입니다.
+2015-04-10 20:39:47,716 ERROR [Worker-87] - System.err - [Fatal Error] :1:39: 예기치 않은 파일의 끝입니다.
+2015-04-10 20:39:52,454 ERROR [Worker-80] - System.err - [Fatal Error] :1:39: 예기치 않은 파일의 끝입니다.
+2015-04-10 20:39:52,457 ERROR [Worker-80] - System.err - [Fatal Error] :1:39: 예기치 않은 파일의 끝입니다.
+2015-04-10 20:39:55,089 ERROR [Worker-84] - System.err - [Fatal Error] :1:39: 예기치 않은 파일의 끝입니다.
+2015-04-10 20:39:55,095 ERROR [Worker-84] - System.err - [Fatal Error] :1:39: 예기치 않은 파일의 끝입니다.
+2015-04-10 20:39:57,976 ERROR [Worker-87] - System.err - [Fatal Error] :1:39: 예기치 않은 파일의 끝입니다.
+2015-04-10 20:39:57,994 ERROR [Worker-87] - System.err - [Fatal Error] :1:39: 예기치 않은 파일의 끝입니다.
+2015-04-10 20:40:00,300 ERROR [Worker-86] - System.err - [Fatal Error] :1:39: 예기치 않은 파일의 끝입니다.
+2015-04-10 20:40:00,306 ERROR [Worker-86] - System.err - [Fatal Error] :1:39: 예기치 않은 파일의 끝입니다.
+2015-04-10 20:40:02,723 ERROR [Worker-87] - System.err - [Fatal Error] :1:39: 예기치 않은 파일의 끝입니다.
+2015-04-10 20:40:02,734 ERROR [Worker-87] - System.err - [Fatal Error] :1:39: 예기치 않은 파일의 끝입니다.
+2015-04-10 20:40:04,895 ERROR [Worker-86] - System.err - [Fatal Error] :1:39: 예기치 않은 파일의 끝입니다.
+2015-04-10 20:40:33,524 ERROR [Worker-83] - System.err - [Fatal Error] :1:39: 예기치 않은 파일의 끝입니다.
+2015-04-10 21:24:25,068 ERROR [Worker-91] - System.err - [Fatal Error] :13:102: "beans:bean" 요소에 대한 "beans" 접두어가 바인드되지 않았습니다.
+2015-04-10 21:24:28,555 ERROR [Worker-90] - System.err - [Fatal Error] :13:102: "beans:bean" 요소에 대한 "beans" 접두어가 바인드되지 않았습니다.
+2015-04-10 21:24:31,015 ERROR [Worker-86] - System.err - [Fatal Error] :13:102: "beans:bean" 요소에 대한 "beans" 접두어가 바인드되지 않았습니다.
+2015-04-10 21:24:36,546 ERROR [Worker-81] - System.err - [Fatal Error] :13:102: "beans:bean" 요소에 대한 "beans" 접두어가 바인드되지 않았습니다.
+2015-04-10 21:24:39,460 ERROR [Worker-89] - System.err - [Fatal Error] :13:102: "beans:bean" 요소에 대한 "beans" 접두어가 바인드되지 않았습니다.
+2015-04-10 21:24:42,829 ERROR [Worker-86] - System.err - [Fatal Error] :13:102: "beans:bean" 요소에 대한 "beans" 접두어가 바인드되지 않았습니다.
+2015-04-10 21:24:47,070 ERROR [Worker-87] - System.err - [Fatal Error] :13:102: "beans:bean" 요소에 대한 "beans" 접두어가 바인드되지 않았습니다.
+2015-04-10 21:24:49,547 ERROR [Worker-51] - System.err - [Fatal Error] :22:60: "beans:property" 요소에 대한 "beans" 접두어가 바인드되지 않았습니다.
+2015-04-10 21:25:04,410 ERROR [Worker-51] - System.err - [Fatal Error] :22:60: "beans:property" 요소에 대한 "beans" 접두어가 바인드되지 않았습니다.
+2015-04-11 09:59:47,953 ERROR [Worker-24] - System.err - [Fatal Error] :20:9: 요소 유형 "property" 다음에는 속성 사양 ">" 또는 "/>"가 와야 합니다.
+2015-04-11 11:45:29,122 ERROR [Worker-27] - System.err - [Fatal Error] :86:96: "tx:annotation-driven" 요소에 대한 "tx" 접두어가 바인드되지 않았습니다.
+2015-04-11 11:45:35,792 ERROR [Worker-27] - System.err - [Fatal Error] :86:96: "tx:annotation-driven" 요소에 대한 "tx" 접두어가 바인드되지 않았습니다.
+2015-04-11 11:45:43,230 ERROR [Worker-37] - System.err - [Fatal Error] :86:96: "tx:annotation-driven" 요소에 대한 "tx" 접두어가 바인드되지 않았습니다.
+2015-04-11 11:45:45,293 ERROR [Worker-37] - System.err - [Fatal Error] :86:96: "tx:annotation-driven" 요소에 대한 "tx" 접두어가 바인드되지 않았습니다.
+2015-04-11 11:45:48,195 ERROR [Worker-27] - System.err - [Fatal Error] :86:96: "tx:annotation-driven" 요소에 대한 "tx" 접두어가 바인드되지 않았습니다.
+2015-04-11 11:45:52,016 ERROR [Worker-24] - System.err - [Fatal Error] :86:96: "tx:annotation-driven" 요소에 대한 "tx" 접두어가 바인드되지 않았습니다.
+2015-04-11 11:45:54,114 ERROR [Worker-27] - System.err - [Fatal Error] :86:96: "tx:annotation-driven" 요소에 대한 "tx" 접두어가 바인드되지 않았습니다.
+2015-04-11 11:45:56,799 ERROR [Worker-25] - System.err - [Fatal Error] :86:96: "tx:annotation-driven" 요소에 대한 "tx" 접두어가 바인드되지 않았습니다.
+2015-04-11 11:45:59,106 ERROR [Worker-37] - System.err - [Fatal Error] :86:96: "tx:annotation-driven" 요소에 대한 "tx" 접두어가 바인드되지 않았습니다.
+2015-04-11 11:46:01,674 ERROR [Worker-36] - System.err - [Fatal Error] :86:96: "tx:annotation-driven" 요소에 대한 "tx" 접두어가 바인드되지 않았습니다.
+2015-04-11 11:46:05,134 ERROR [Worker-24] - System.err - [Fatal Error] :86:96: "tx:annotation-driven" 요소에 대한 "tx" 접두어가 바인드되지 않았습니다.
+2015-04-11 11:46:07,947 ERROR [Worker-24] - System.err - [Fatal Error] :86:96: "tx:annotation-driven" 요소에 대한 "tx" 접두어가 바인드되지 않았습니다.
+2015-04-11 11:46:11,293 ERROR [Worker-37] - System.err - [Fatal Error] :86:96: "tx:annotation-driven" 요소에 대한 "tx" 접두어가 바인드되지 않았습니다.
+2015-04-11 11:46:14,157 ERROR [Worker-27] - System.err - [Fatal Error] :86:96: "tx:annotation-driven" 요소에 대한 "tx" 접두어가 바인드되지 않았습니다.
+2015-04-11 11:46:16,720 ERROR [Worker-25] - System.err - [Fatal Error] :83:62: 요소 유형 "beans:property"은(는) 짝이 맞는 종료 태그 "</beans:property>"(으)로 종료되어야 합니다.
+2015-04-11 11:46:19,210 ERROR [Worker-34] - System.err - [Fatal Error] :86:96: "tx:annotation-driven" 요소에 대한 "tx" 접두어가 바인드되지 않았습니다.
+2015-04-11 11:46:21,627 ERROR [Worker-34] - System.err - [Fatal Error] :86:14: 요소 유형 "beans:tx" 다음에는 속성 사양 ">" 또는 "/>"가 와야 합니다.
+2015-04-11 11:46:26,520 ERROR [Worker-27] - System.err - [Fatal Error] :86:14: 요소 유형 "beans:tx" 다음에는 속성 사양 ">" 또는 "/>"가 와야 합니다.
+2015-04-11 11:51:58,971 ERROR [Worker-24] - System.err - [Fatal Error] :87:96: "tx:annotation-driven" 요소에 대한 "tx" 접두어가 바인드되지 않았습니다.
+2015-04-11 11:52:12,202 ERROR [Worker-37] - System.err - [Fatal Error] :87:96: "tx:annotation-driven" 요소에 대한 "tx" 접두어가 바인드되지 않았습니다.
+2015-04-11 11:52:17,308 ERROR [Worker-24] - System.err - [Fatal Error] :87:96: "tx:annotation-driven" 요소에 대한 "tx" 접두어가 바인드되지 않았습니다.
+2015-04-11 11:52:52,051 ERROR [Worker-38] - System.err - [Fatal Error] :87:96: "tx:annotation-driven" 요소에 대한 "tx" 접두어가 바인드되지 않았습니다.
+2015-04-11 11:54:16,127 ERROR [Worker-25] - System.err - [Fatal Error] :88:96: "tx:annotation-driven" 요소에 대한 "tx" 접두어가 바인드되지 않았습니다.
+2015-04-11 11:54:24,784 ERROR [Worker-38] - System.err - [Fatal Error] :88:96: "tx:annotation-driven" 요소에 대한 "tx" 접두어가 바인드되지 않았습니다.
+2015-04-11 12:11:25,212 ERROR [Worker-34] - System.err - [Fatal Error] :73:7: 요소 유형 "beans:property"은(는) 짝이 맞는 종료 태그 "</beans:property>"(으)로 종료되어야 합니다.
+2015-04-11 13:27:58,101 ERROR [Worker-66] - System.err - [Fatal Error] :13:10: XML document structures must start and end within the same entity.
+2015-04-11 17:19:00,656 ERROR [Worker-77] - System.err - [Fatal Error] :7:12: The character sequence "]]>" must not appear in content unless used to mark the end of a CDATA section.

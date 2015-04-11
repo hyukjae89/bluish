@@ -1,0 +1,5 @@
+1428650810920	Move 'query' to 'resources'
+1428668563328	Move 'mybatis-context.xml' to 'spring'
+1428668934781	Move 'query.xml' to 'mapper'
+1428668939617	Delete element
+1428712607864	Move 'web.xml' to 'WEB-INF'

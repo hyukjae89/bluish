@@ -16,7 +16,6 @@
 		img { border: 0; }
 		body{ background-color: #E1E1E1;}
 	</style>
-	
 </head>
 <body>
 	<header>

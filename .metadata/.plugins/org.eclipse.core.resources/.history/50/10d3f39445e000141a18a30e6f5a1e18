@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="query">
+    <select id="selectTotalBoard" parameterType="map" resultType="com.hyukjae.portfolio.bean.BoardBean">
+       	select * from ${tblName} order by ref desc, pos limit ${start}, ${end}
+    </select>
+    
+    <select id="selectTotalCount" parameterType="string" resultType="int">
+        select count(num) from ${value}
+    </select>
+    
+    <select id="selectOneBoard" parameterType="map" resultType="com.hyukjae.portfolio.bean.BoardBean">
+        select * from ${tblName} where num = ${num}
+    </select>
+    
+    <update id="updateCount" parameterType="map">
+        update ${tblName} set count=count+1 where num = ${num}
+    </update>
+    
+    <insert id="insertBoard" parameterType="map">
+        insert into ${tblName} (name,subject,content,pos,ref,regdate,count)
+        	values ('${bean.name}', '${bean.subject}', '${bean.content}', 0, 1, now(), 0)
+    </insert>
+    
+    <select id="selectMaxNum" parameterType="string" resultType="int">
+		select max(num) from ${value};
+    </select>
+    
+    <select id="selectMember" parameterType="map" resultType="com.hyukjae.portfolio.bean.MemberBean">
+		select * from tblmember where id = '${id}' and pass = '${pass}'
+    </select>
+    
+    <delete id="deleteBoard" parameterType="map">
+		delete from ${tblName} where num = ${num}
+	</delete>
+	
+    <update id="" parameterType="">
+        update ${tblName} set subject = '${subject}', content = '${content}' where num = ${num}
+    </update>
+</mapper>

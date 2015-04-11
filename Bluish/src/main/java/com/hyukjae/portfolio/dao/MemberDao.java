@@ -1,10 +1,9 @@
 package com.hyukjae.portfolio.dao;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.dao.EmptyResultDataAccessException;
-import org.springframework.jdbc.core.BeanPropertyRowMapper;
-import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.jdbc.core.RowMapper;
+import java.util.HashMap;
+import java.util.Map;
+
+import org.apache.ibatis.session.SqlSession;
 import org.springframework.stereotype.Repository;
 
 import com.hyukjae.portfolio.bean.MemberBean;
@@ -12,7 +11,30 @@ import com.hyukjae.portfolio.bean.MemberBean;
 @Repository
 public class MemberDao {
 	
-	private JdbcTemplate jdbcTemplate;
+	private SqlSession sqlSession;    
+    
+    public void setSqlSession(SqlSession sqlSession)
+    {
+    	this.sqlSession = sqlSession;
+    }
+
+    public MemberBean getMemberCheck(String id, String pass){
+		
+		Map<String, String> map = new HashMap<String, String>();
+		map.put("id", id);
+		map.put("pass", pass);
+		
+		MemberBean bean = null;
+		
+		try{
+			bean = sqlSession.selectOne("query.selectMember", map);
+		}catch(Exception e){
+		}
+		
+		return bean;
+	}
+	
+	/*private JdbcTemplate jdbcTemplate;
 	
     @Autowired
 	public void setJdbcTemplate(JdbcTemplate jdbcTemplate) {
@@ -33,5 +55,5 @@ public class MemberDao {
 		}
 		
 		return bean;
-	}
+	}*/
 }

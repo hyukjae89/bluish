@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="query">
+    
+    <!-- 게시판 리스트 불러오기 -->
+    <select id="selectTotalBoard" parameterType="map" resultType="com.hyukjae.portfolio.bean.BoardBean">
+       	select * from ${tblName} order by ref desc, pos limit ${start}, ${end}
+    </select>
+    
+    <!-- 게시물 전체 개수를 알기위한 쿼리 -->
+    <select id="selectTotalCount" parameterType="string" resultType="int">
+        select count(num) from ${value}
+    </select>
+    
+    <!-- 게시물 하나에 대한 정보 불러오기 -->
+    <select id="selectOneBoard" parameterType="map" resultType="com.hyukjae.portfolio.bean.BoardBean">
+        select * from ${tblName} where num = ${num}
+    </select>
+    
+    <!-- 게시물에 대한 조회수 증가 -->
+    <update id="updateCount" parameterType="map">
+        update ${tblName} set count=count+1 where num = ${num}
+    </update>
+    
+    <!-- 게시물 입력하기 -->
+    <insert id="insertBoard" parameterType="map">
+        insert into ${tblName} (name,subject,content,pos,ref,regdate,count)
+        	values ('${bean.name}', '${bean.subject}', '${bean.content}', 0, ${ref}, now(), 0)
+    </insert>
+    
+    <!-- 게시물 삭제하기 -->
+    <delete id="deleteBoard" parameterType="map">
+		delete from ${tblName} where num = ${num}
+	</delete>
+	
+    <!-- 게시물 수정하기 -->
+    <update id="updateBoard" parameterType="map">
+        update ${tblName} set subject = '${subject}', content = '${content}' where num = ${num}
+    </update>
+    
+    <!-- 게시물의 가장 큰 순번을 찾기위한 쿼리 -->
+    <select id="selectMaxNum" parameterType="string" resultType="int">
+		select max(num) from ${value};
+    </select>
+    
+    <select id="selectMember" parameterType="map" resultType="com.hyukjae.portfolio.bean.MemberBean">
+		select * from tblmember where id = '${id}' and pass = '${pass}'
+    </select>
+    
+    
+</mapper>
