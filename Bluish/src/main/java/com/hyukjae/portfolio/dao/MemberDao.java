@@ -9,8 +9,9 @@ import org.springframework.stereotype.Repository;
 import com.hyukjae.portfolio.bean.MemberBean;
 
 @Repository
-public class MemberDao {
+public class MemberDao{
 	
+	/*mybatis를 이용한 DB연동*/
 	private SqlSession sqlSession;    
     
     public void setSqlSession(SqlSession sqlSession)
@@ -34,6 +35,7 @@ public class MemberDao {
 		return bean;
 	}
 	
+    /*JdbcTemplate을 이용한 DB연동*/
 	/*private JdbcTemplate jdbcTemplate;
 	
     @Autowired

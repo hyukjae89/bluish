@@ -3,5 +3,4 @@ INDEX VERSION 1.3+C:\Users\Hyukjae\Documents\GitHub\bluish\.metadata\.plugins\or
 1510454045.index
 2660231088.index
 870567205.index
-1003949768.index
 3578687938.index

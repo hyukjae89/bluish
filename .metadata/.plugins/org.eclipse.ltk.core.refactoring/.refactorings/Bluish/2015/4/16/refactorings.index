@@ -1,0 +1,20 @@
+1428836932077	Move 'servlet-context.xml' to 'spring'
+1428837603100	Move 'servlet-context.xml' to 'appServlet'
+1428837606440	Delete element
+1428839261956	Rename resource 'BoardDao.java'
+1428839314769	Rename field 'boardDao'
+1428839347262	Rename resource 'Board.java'
+1428845736125	Rename field 'boardDaoImpl'
+1428846003959	Rename resource 'MemberDao.java'
+1428846017151	Rename resource 'MemberDao2.java'
+1428846903332	Move 'security.xml' to 'spring'
+1428846907622	Rename resource 'security.xml'
+1428846930449	Move 'security-context.xml' to 'security'
+1428922760189	Delete element
+1428922766091	Delete element
+1428922775989	Rename resource 'BoardDaoImpl.java'
+1428922783775	Rename resource 'MemberDaoImpl.java'
+1428923134933	Rename resource 'views'
+1428923243202	Delete element
+1428923246280	Delete element
+1428931766494	Delete element

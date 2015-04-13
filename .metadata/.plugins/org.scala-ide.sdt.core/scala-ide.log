@@ -49,3 +49,13 @@
 2015-04-11 12:11:25,212 ERROR [Worker-34] - System.err - [Fatal Error] :73:7: 요소 유형 "beans:property"은(는) 짝이 맞는 종료 태그 "</beans:property>"(으)로 종료되어야 합니다.
 2015-04-11 13:27:58,101 ERROR [Worker-66] - System.err - [Fatal Error] :13:10: XML document structures must start and end within the same entity.
 2015-04-11 17:19:00,656 ERROR [Worker-77] - System.err - [Fatal Error] :7:12: The character sequence "]]>" must not appear in content unless used to mark the end of a CDATA section.
+2015-04-12 20:09:38,087 ERROR [Worker-0] - System.err - [Fatal Error] :41:104: "beans:bean" 요소에 대한 "beans" 접두어가 바인드되지 않았습니다.
+2015-04-12 20:37:15,639 ERROR [Worker-9] - System.err - [Fatal Error] :103:1: 요소 유형 "beans:" 다음에는 속성 사양 ">" 또는 "/>"가 와야 합니다.
+2015-04-12 20:37:15,645 ERROR [Worker-9] - System.err - [Fatal Error] :103:1: 요소 유형 "beans:" 다음에는 속성 사양 ">" 또는 "/>"가 와야 합니다.
+2015-04-12 20:37:26,066 ERROR [Worker-4] - System.err - [Fatal Error] :103:1: 요소 유형 "beans:" 다음에는 속성 사양 ">" 또는 "/>"가 와야 합니다.
+2015-04-12 20:37:26,071 ERROR [Worker-4] - System.err - [Fatal Error] :103:1: 요소 유형 "beans:" 다음에는 속성 사양 ">" 또는 "/>"가 와야 합니다.
+2015-04-12 22:57:32,511 ERROR [Worker-27] - System.err - [Fatal Error] :1:39: 예기치 않은 파일의 끝입니다.
+2015-04-12 22:57:59,674 ERROR [Worker-25] - System.err - [Fatal Error] :1:39: 예기치 않은 파일의 끝입니다.
+2015-04-12 22:58:07,010 ERROR [Worker-15] - System.err - [Fatal Error] :6:125: XML 문서 구조는 동일한 엔티티에서 시작되고 끝나야 합니다.
+2015-04-13 20:00:43,808 ERROR [Worker-11] - System.err - [Fatal Error] :104:14: 주석에서는 "--" 문자열이 허용되지 않습니다.
+2015-04-13 20:00:46,403 ERROR [Worker-11] - System.err - [Fatal Error] :104:14: 주석에서는 "--" 문자열이 허용되지 않습니다.

@@ -1,0 +1,11 @@
+package com.hyukjae.portfolio.dao;
+
+import java.util.List;
+
+import com.hyukjae.portfolio.bean.BoardBean;
+
+public interface BoardDao {
+	
+	public List<BoardBean> getTotalBoard(int start, int end, String tblName);
+
+}

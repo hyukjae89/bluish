@@ -5,10 +5,6 @@ import java.util.List;
 import java.util.Map;
 
 import org.apache.ibatis.session.SqlSession;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.jdbc.core.BeanPropertyRowMapper;
-import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
 
 import com.hyukjae.portfolio.bean.BoardBean;
@@ -16,6 +12,7 @@ import com.hyukjae.portfolio.bean.BoardBean;
 @Repository
 public class BoardDao{
 	
+	/*mybatis를 이용한 DB연동*/
 	private SqlSession sqlSession;    
     
     public void setSqlSession(SqlSession sqlSession)
@@ -95,6 +92,7 @@ public class BoardDao{
     	sqlSession.update("query.updateBoard", map);
     }
     
+    /*JdbcTemplate을 이용한 DB연동*/
 /*	private JdbcTemplate jdbcTemplate;
 	
     @Autowired
