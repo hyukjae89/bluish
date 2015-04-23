@@ -2,7 +2,7 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="java.util.Map"/>
 <fullyQualifiedTypeName name="java.util.HashMap"/>
-<fullyQualifiedTypeName name="org.mybatis.spring.support.SqlSessionDaoSupport"/>
 <fullyQualifiedTypeName name="com.hyukjae.portfolio.dao.MemberDao"/>
 <fullyQualifiedTypeName name="java.lang.Override"/>
+<fullyQualifiedTypeName name="org.mybatis.spring.support.SqlSessionDaoSupport"/>
 </qualifiedTypeNameHistroy>

@@ -13,16 +13,16 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import com.hyukjae.portfolio.bean.BoardBean;
-import com.hyukjae.portfolio.dao.BoardDao;
+import com.hyukjae.portfolio.dao.BoardDaoImpl;
 
 @Controller
 public class BoardController {
 	
 	@Autowired
-	BoardDao boardDao;
+	BoardDaoImpl boardDaoImpl;
 	
-	public void setBoardDao(BoardDao boardDao){
-		this.boardDao = boardDao;
+	public void setBoardDao(BoardDaoImpl boardDaoImpl){
+		this.boardDaoImpl = boardDaoImpl;
 	}
 	
 	@RequestMapping(value = "/boardlist", method = RequestMethod.GET)
@@ -56,10 +56,10 @@ public class BoardController {
 		end = start + numPerPage;
 		
 		String tblName = "tbl" + category;
-		totalRecord = boardDao.getTotalCount(tblName);
+		totalRecord = boardDaoImpl.getTotalCount(tblName);
 		
 		if(totalRecord > 0){
-			list = boardDao.getTotalBoard(start, end, tblName); 
+			list = boardDaoImpl.getTotalBoard(start, end, tblName); 
 			number = totalRecord - (nowPage-1) * pagePerBlock;
 		}
 		
@@ -96,7 +96,7 @@ public class BoardController {
 		model.addAttribute("board_view", "board_info_view.jsp");
 		
 		String tblName = "tbl" + category;
-		BoardBean bean = boardDao.getOneBoard(num, tblName);
+		BoardBean bean = boardDaoImpl.getOneBoard(num, tblName);
 		
 		model.addAttribute("bean", bean);
 		model.addAttribute("num", num);
@@ -129,10 +129,10 @@ public class BoardController {
 		
 		String tblName = "tbl" + category;
 		
-		boardDao.writeBoard(bean, tblName);
+		boardDaoImpl.writeBoard(bean, tblName);
 		
-		int num = boardDao.getMaxNum(tblName);
-		bean = boardDao.getOneBoard(String.valueOf(num), tblName);
+		int num = boardDaoImpl.getMaxNum(tblName);
+		bean = boardDaoImpl.getOneBoard(String.valueOf(num), tblName);
 		
 		model.addAttribute("bean", bean);
 		
@@ -146,7 +146,7 @@ public class BoardController {
 			
 			String tblName = "tbl" + category;
 			
-			boardDao.deleteBoard(num, tblName);
+			boardDaoImpl.deleteBoard(num, tblName);
 		}
 		else{
 			return "redirect:memberlogin"; 
@@ -183,9 +183,9 @@ public class BoardController {
 		
 		String tblName = "tbl" + category;
 		
-		boardDao.updateBoard(num, subject, content, tblName);
+		boardDaoImpl.updateBoard(num, subject, content, tblName);
 		
-		BoardBean bean = boardDao.getOneBoard(String.valueOf(num), tblName);
+		BoardBean bean = boardDaoImpl.getOneBoard(String.valueOf(num), tblName);
 		
 		model.addAttribute("bean", bean);
 		model.addAttribute("num", num);

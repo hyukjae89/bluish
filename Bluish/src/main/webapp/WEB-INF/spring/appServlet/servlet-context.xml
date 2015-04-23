@@ -72,6 +72,12 @@
 		<beans:property name="password">
 			<beans:value>null</beans:value>
 		</beans:property>
+		<beans:property name="validationQuery">
+        	<beans:value>SELECT 1</beans:value>
+	    </beans:property>
+	    <beans:property name="testWhileIdle">
+	        <beans:value>true</beans:value>
+	    </beans:property>
     </beans:bean>
     
     <!-- mybatis 연동-->
@@ -88,11 +94,12 @@
     <beans:bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
         <beans:constructor-arg ref="sqlSessionFactory"></beans:constructor-arg>
     </beans:bean>
+    
 
-	<beans:bean id="boardDao" class="com.hyukjae.portfolio.dao.BoardDao">
+	<beans:bean id="boardDaoImpl" class="com.hyukjae.portfolio.dao.BoardDaoImpl">
 		<beans:property name="sqlSession" ref="sqlSession"></beans:property>
 	</beans:bean>
-   	<beans:bean id="memberDao" class="com.hyukjae.portfolio.dao.MemberDao">
+   	<beans:bean id="memberDaoImpl" class="com.hyukjae.portfolio.dao.MemberDaoImpl">
 		<beans:property name="sqlSession" ref="sqlSession"></beans:property>
 	</beans:bean>
     	

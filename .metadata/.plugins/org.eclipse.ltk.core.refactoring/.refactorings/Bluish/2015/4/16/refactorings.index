@@ -18,3 +18,13 @@
 1428923243202	Delete element
 1428923246280	Delete element
 1428931766494	Delete element
+1428978777624	Rename resource 'BoardDao.java'
+1428978786107	Rename resource 'MemberDao.java'
+1428979097101	Rename field 'boardDao'
+1428979111537	Rename local variable 'boardDao'
+1428979134437	Rename field 'memberDao'
+1428979142950	Rename local variable 'memberDao'
+1428980836810	Rename field 'boardDaoImpl'
+1428980841266	Rename local variable 'boardDaoImpl'
+1428980924984	Rename field 'boardDao'
+1428980931514	Rename local variable 'boardDao'
