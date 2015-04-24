@@ -6,7 +6,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
 	<style>
 		#board_update_view_space{
-			height: 1000px;
+			/* height: 1000px; */
 		}
 		
 		#board_update_name{
@@ -44,6 +44,22 @@
 	</style>
 	
 	<script>
+		window.onload = function() {
+			var tar = document.getElementsByTagName('textarea');
+			var dynHeight = 0;
+			
+			for (var i = 0; i < tar.length; i++) {
+				tar[i].style.height = tar[i].scrollHeight;
+				dynHeight += tar[i].scrollHeight;
+			}
+			
+			var view_space = document.getElementById('board_update_view_space');
+			
+			if(dynHeight < 820){
+				view_space.style.height = 820+"px";
+			}
+		};
+		
 		function boardSubmit(){
 			if(document.boardUpdateFrm.board_update_subject.value == ""){
 				alert("제목을 입력해 주세요.");
@@ -70,18 +86,18 @@
 				
 				<tr height="50px;">
 					<td id="info_item" width="110px">제&nbsp;목</td>
-					<td width="850px"><input type="text" id="board_update_subject" name="subject" size="120" value="${subject }"></td>
+					<td width="850px"><input type="text" id="board_update_subject" name="subject" size="120" value="${bean.getSubject() }"></td>
 				</tr>
 				<tr><td colspan="2"><br><hr><br></td></tr>
 				<tr>
-					<td colspan="2"><textarea id="board_update_content" name="content">${content }</textarea></td>
+					<td colspan="2"><textarea id="board_update_content" name="content">${bean.getContent() }</textarea></td>
 				</tr>
 				<tr>
 					<td colspan="2"><br></td>
 				</tr>
 				<tr align="center">
 					<td colspan="2">
-						<input type="button" value="확인" onclick="boardSubmit()">&nbsp;&nbsp;<input type="button" value="취소">
+						<input type="button" value="확인" onclick="boardSubmit()">&nbsp;&nbsp;<input type="button" value="취소" onclick="javascript:history.go(-1)">
 					</td>
 				</tr>
 			</table>

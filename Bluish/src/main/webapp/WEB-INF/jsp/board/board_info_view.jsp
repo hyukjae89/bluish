@@ -67,8 +67,8 @@
 			
 			var view_space = document.getElementById('board_info_view_space');
 			
-			if(dynHeight < 750){
-				view_space.style.height = 750+"px";
+			if(dynHeight < 780){
+				view_space.style.height = 780+"px";
 			}
 		};
 		
@@ -119,8 +119,6 @@
 	<form name="updateFrm" action="boardupdateview" method="post">
 		<input type="hidden" name="num" value="${num}">
 		<input type="hidden" name="category">
-		<input type="hidden" name="subject" value="${bean.getSubject() }">
-		<input type="hidden" name="content" value="${bean.getContent() }">
 	</form>
 </body>
 </html>

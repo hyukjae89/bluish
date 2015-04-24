@@ -1,5 +1,0 @@
-package com.hyukjae.portfolio.dao;
-
-public interface Board {
-
-}

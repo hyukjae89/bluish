@@ -77,7 +77,7 @@
 				</tr>
 				<tr align="center">
 					<td colspan="2">
-						<input type="button" value="확인" onclick="boardSubmit()">&nbsp;&nbsp;<input type="button" value="취소">
+						<input type="button" value="확인" onclick="boardSubmit()">&nbsp;&nbsp;<input type="button" value="취소" onclick="javascript:history.go(-1)">
 					</td>
 				</tr>
 			</table>

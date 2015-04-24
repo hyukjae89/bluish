@@ -5,7 +5,40 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2015-04-21T10:50:00Z</updated>
+  <updated>2015-04-23T14:27:44Z</updated>
+  <entry>
+    <title>Spring Security 4.0.1 Released</title>
+    <link rel="alternate" href="https://spring.io/blog/2015/04/23/spring-security-4-0-1-released" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Rob Winch</name>
+    </author>
+    <id>tag:spring.io,2015-04-23:2092</id>
+    <updated>2015-04-23T14:27:44Z</updated>
+    <content type="html">&lt;p&gt;I&amp;rsquo;m pleased to announce the release of Spring Security 4.0.1.RELEASE. This release is the first maintenance release of the 4.0 line and focusses on fixing any major issues that were found in the new release. For complete details on the release, refer to the &lt;a href="https://jira.spring.io/issues/?jql=fixVersion%20%3D%204.0.1%20AND%20project%20%3D%20SEC"&gt;Change Log&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;&lt;a href="http://projects.spring.io/spring-security/"&gt;Project Site&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-security/site/docs/4.0.1.RELEASE/reference/htmlsingle/"&gt;Reference&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-security/site/docs/4.0.1.RELEASE/guides/html5/"&gt;Guides&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Security Kerberos 1.0.0 Released</title>
+    <link rel="alternate" href="https://spring.io/blog/2015/04/23/spring-security-kerberos-1-0-0-released" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Janne Valkealahti</name>
+    </author>
+    <id>tag:spring.io,2015-04-23:2094</id>
+    <updated>2015-04-23T10:21:37Z</updated>
+    <content type="html">&lt;p&gt;We are pleased to announce the release of &lt;a href="http://projects.spring.io/spring-security-kerberos/"&gt;Spring Security Kerberos&lt;/a&gt; 1.0.0.RELEASE. I would like to start by saying thank you for all community members who helped us by either creating PR&amp;rsquo;s for new features or simply providing feedback.&lt;/p&gt;&lt;p&gt;Here is a guick summary of changes what went through with two release candidates and a GA release:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;We did a lot of housekeeping to put a whole project up-to-date due to a long overdue from a first milestone.&lt;/li&gt;
+  &lt;li&gt;Spring team added &lt;em&gt;KerberosRestTemplate&lt;/em&gt; while all other new features came from a community.&lt;/li&gt;
+  &lt;li&gt;Community contributions are:
+  &lt;ul&gt;
+    &lt;li&gt;&lt;em&gt;KerberosLdapContextSource&lt;/em&gt; which allows to authenticate against Windows AD with existing Kerberos credentials to get more info about a logged-in user.&lt;/li&gt;
+    &lt;li&gt;Tweaks to Kerberos negotiation which allows better interoperability with WinRM.&lt;/li&gt;
+    &lt;li&gt;Changes how &lt;em&gt;SpnegoEntryPoint&lt;/em&gt; is used which allows to fallback to other authentication methods if Kerberos negotiation fails.&lt;/li&gt;
+  &lt;/ul&gt;&lt;/li&gt;
+  &lt;li&gt;Samples has been re-written from scratch and are now Bootified to give better user exprerience.&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;Now that we completed this long journey and got first GA release out it&amp;rsquo;s time to think where we are going from here. New features are driven by demand from a community so keep those PR&amp;rsquo;s coming(we already have something lined up which didn&amp;rsquo;t get into this release). Some of the new planned features will be done on a lower level where Kerberos is traditionally used(Web, Spnego, AD) due to demand of adding better security features to &lt;em&gt;Spring for Apache Hadoop&lt;/em&gt; for example. Hadoop is already a heavy user of Kerberos so it makes sense to support same concepts in our own Spring libraries. &lt;/p&gt;&lt;p&gt;We&amp;rsquo;d love to hear back what people think by participating in a project or simply creating issues or feature requests at &lt;a href="https://github.com/spring-projects/spring-security-kerberos"&gt;GitHub&lt;/a&gt;.&lt;/p&gt;</content>
+  </entry>
   <entry>
     <title>This Week in Spring - April 21, 2015</title>
     <link rel="alternate" href="https://spring.io/blog/2015/04/21/this-week-in-spring-april-21-2015" />
@@ -901,44 +934,6 @@ public class DemoApplication {&#xD;
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;
 &lt;p&gt;&#xD;
   &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/JE_DQcCNX7w" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&#xD;
-&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>SpringOne2GX 2014 Replay: Performance Tuning Grails Applications</title>
-    <link rel="alternate" href="https://spring.io/blog/2015/04/08/springone2gx-2014-replay-performance-tuning-grails-applications" />
-    <category term="news" label="News and Events" />
-    <author>
-      <name>Pieter Humphrey</name>
-    </author>
-    <id>tag:spring.io,2015-04-09:2072</id>
-    <updated>2015-04-08T18:52:00Z</updated>
-    <content type="html">&lt;p&gt;Recorded at SpringOne2GX 2014. &lt;/p&gt;
-&lt;p&gt;Speaker: Lari Hotari &lt;/p&gt;
-&lt;p&gt;Essential Grails Track &lt;/p&gt;
-&lt;p&gt;Slides: &lt;a href="http://www.slideshare.net/SpringCentral/grails-performanceoptimization-s2gx-2014-41177969"&gt;http://www.slideshare.net/SpringCentral/grails-performanceoptimization-s2gx-2014-41177969 &lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Grails has great performance characteristics but as with all full stack frameworks, attention must be paid to optimize performance.&lt;/p&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;p&gt;&#xD;
-  &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/thdFMj9PRl4" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&#xD;
-&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>SpringOne2GX 2014 Replay: Runtime Metaprogramming With Groovy</title>
-    <link rel="alternate" href="https://spring.io/blog/2015/04/08/springone2gx-2014-replay-runtime-metaprogramming-with-groovy" />
-    <category term="news" label="News and Events" />
-    <author>
-      <name>Pieter Humphrey</name>
-    </author>
-    <id>tag:spring.io,2015-04-09:2071</id>
-    <updated>2015-04-08T18:51:00Z</updated>
-    <content type="html">&lt;p&gt;Recorded at SpringOne2GX 2014. &lt;/p&gt;
-&lt;p&gt;Speaker: Jeff Scott Brown &lt;/p&gt;
-&lt;p&gt;More Groovy Track &lt;/p&gt;
-&lt;p&gt;Slides: &lt;a href="http://www.slideshare.net/SpringCentral/runtime-metaprogrammingwithgroovy"&gt;http://www.slideshare.net/SpringCentral/runtime-metaprogrammingwithgroovy&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;The dynamic runtime nature of Groovy is one of the things that sets it apart from standard Java and makes it a fantastic language for building dynamic applications for the Java Platform. The metaprogramming capabilities offered by the language provide everything that an application development team needs to build systems that are far more capable than their all Java counterparts. &lt;/p&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;p&gt;&#xD;
-  &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/0uxQAYvPax8" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&#xD;
 &lt;/p&gt;</content>
   </entry>
 </feed>

@@ -156,15 +156,17 @@ public class BoardController {
 	}
 	
 	@RequestMapping(value = "/boardupdateview", method = RequestMethod.POST)
-	public String boardUpdate(Locale locale, Model model, HttpSession session, @RequestParam("num")String num, @RequestParam("category")String category,
-			@RequestParam("subject")String subject, @RequestParam("content")String content) {
+	public String boardUpdate(Locale locale, Model model, HttpSession session, @RequestParam("num")String num, @RequestParam("category")String category) {
 		
 		if(session.getAttribute("idKey") != null){
 			model.addAttribute("title", "게시판");
 			model.addAttribute("view", "../board/board_page.jsp");
 			model.addAttribute("board_view", "board_update_view.jsp");
-			model.addAttribute("subject", subject);
-			model.addAttribute("content", content);
+			
+			String tblName = "tbl" + category;
+			BoardBean bean = boardDaoImpl.getOneBoard(num, tblName);
+			
+			model.addAttribute("bean", bean);
 			model.addAttribute("num", num);
 			model.addAttribute("category", category);
 		}

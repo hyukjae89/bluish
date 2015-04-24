@@ -1,8 +1,0 @@
-package com.hyukjae.portfolio.dao;
-
-import com.hyukjae.portfolio.bean.MemberBean;
-
-public interface MemberDao {
-
-	public MemberBean getMemberCheck(String id, String pass)
-}
