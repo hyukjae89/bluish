@@ -1,0 +1,272 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- Bootstrap Core CSS -->
+	<link href="../../../resources/css/bootstrap.min.css" rel="stylesheet">
+	
+	<!-- Custom CSS -->
+	<link href="../../../resources/css/clean-blog.min.css" rel="stylesheet">
+	<link href="../../../resources/css/style_clean.css" rel="stylesheet" media="screen">
+	<link href="../../../resources/css/styles.css" rel="stylesheet" id="theme-style">
+	
+	<!-- Custom Fonts -->
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> 
+    <link href="../../../resources/css/font-awesome.css" rel="stylesheet" >
+	    
+	<link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'> 
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+	
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	
+	
+	
+		
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	
+	<title>Bluish</title>
+
+	<style>
+		body{
+			background: white;
+		}
+		.section-inner{
+			background-color: black;
+		}
+	</style>
+</head>
+<body>
+	<script src="../../../resources/js/jquery.min.js"></script>
+	<script src="../../../resources/js/bootstrap.min.js"></script>
+	<script src="../../../resources/js/clean-blog.min.js"></script>
+
+	<!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">Bluish</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <li>
+                        <a href="profile">About</a>
+                    </li>
+                    <li>
+                        <a href="portfolio">Portfolio</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    <header class="intro-header" style="background-image: url('../../../resources/images/portfolio/portfolio2.jpg')">
+		<!-- Page Header -->
+	    <!-- Set your background image for this header on the line below. -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="site-heading">
+                        <h1 style="color: white;">Portfolio</h1>
+                        <hr class="small">
+                        <span class="subheading"><br></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-preview">
+                    <a href="#shoppingmall">
+                        <h2 class="post-title">
+                             쇼핑몰
+                        </h2>
+                        <h3 class="post-subtitle">
+                            Web
+                        </h3>
+                    </a>
+                </div>
+                <hr>
+                <div class="post-preview">
+                    <a href="#papaf">
+                        <h2 class="post-title">
+                            Papaf
+                        </h2>
+                        <h3 class="post-subtitle">
+                            Mobile web / Hanium Big Project
+                        </h3>
+                    </a>
+                </div>
+                <hr>
+                <div class="post-preview">
+                    <a href="#kiwii">
+                        <h2 class="post-title">
+                            Kiwii
+                        </h2>
+                        <h3 class="post-subtitle">
+                            Android app / 2014 Super App Korea
+                        </h3>
+                    </a>
+                </div>
+                <hr>
+                <div class="post-preview">
+                    <a href="#ggum">
+                        <h2 class="post-title">
+                            껌딱지
+                        </h2>
+                        <h3 class="post-subtitle">
+                            Android native app / Android study in UDACITY
+                        </h3>
+                    </a>
+                </div>
+                <hr>
+            </div>
+        </div>
+    </div>
+    <br><hr><br>
+	<div class="container sections-wrapper">
+		<div class="row">
+			<div class="primary col-md-12 col-sm-12 col-xs-12">
+				<section class="about section" id="shoppingmall">
+					<div class="section-inner">
+						<h2 class="heading">쇼핑몰</h2>
+						<div class="content">
+							<img alt="" src="../../../resources/images/portfolio/shop_1.PNG" style="border: 1px solid black;">
+							<img alt="" src="../../../resources/images/portfolio/shop_2.PNG" style="border: 1px solid black;">
+							<img alt="" src="../../../resources/images/portfolio/shop_3.PNG" style="border: 1px solid black;">
+							<p>
+								2013.05 ~ 2013.12 (8개월)<br>
+								교육명 : Enterprise Java 개발자<br>
+								교육기관 : 삼성SDS<br>
+								교육내용 : Java, JSP, Spring Framework, 기타 취업 관련 교육
+							</p>
+						</div>
+						<!--//content-->
+					</div>
+					<!--//section-inner-->
+				</section>
+			</div>
+		</div>
+	<hr>
+	</div>
+	<div class="container sections-wrapper">
+		<div class="row">
+			<div class="primary col-md-12 col-sm-12 col-xs-12">
+				<section class="about section" id="papaf">
+					<div class="section-inner">
+						<h2 class="heading">Papaf(파팝)</h2>
+						<div class="content">
+							<p>
+								2013.05 ~ 2013.12 (8개월)<br>
+								교육명 : Enterprise Java 개발자<br>
+								교육기관 : 삼성SDS<br>
+								교육내용 : Java, JSP, Spring Framework, 기타 취업 관련 교육
+							</p>
+						</div>
+						<!--//content-->
+					</div>
+					<!--//section-inner-->
+				</section>
+			</div>
+		</div>
+	<hr>
+	</div>
+		<div class="container sections-wrapper">
+		<div class="row">
+			<div class="primary col-md-12 col-sm-12 col-xs-12">
+				<section class="about section" id="kiwii">
+					<div class="section-inner">
+						<h2 class="heading">Kiwii(키위)</h2>
+						<div class="content">
+							<p>
+								2013.05 ~ 2013.12 (8개월)<br>
+								교육명 : Enterprise Java 개발자<br>
+								교육기관 : 삼성SDS<br>
+								교육내용 : Java, JSP, Spring Framework, 기타 취업 관련 교육
+							</p>
+						</div>
+						<!--//content-->
+					</div>
+					<!--//section-inner-->
+				</section>
+			</div>
+		</div>
+	<hr>
+	</div>
+	<div class="container sections-wrapper">
+		<div class="row">
+			<div class="primary col-md-12 col-sm-12 col-xs-12">
+				<section class="about section" id="ggum">
+					<div class="section-inner">
+						<h2 class="heading">껌딱지</h2>
+						<div class="content">
+							<p>
+								2013.05 ~ 2013.12 (8개월)<br>
+								교육명 : Enterprise Java 개발자<br>
+								교육기관 : 삼성SDS<br>
+								교육내용 : Java, JSP, Spring Framework, 기타 취업 관련 교육
+							</p>
+						</div>
+						<!--//content-->
+					</div>
+					<!--//section-inner-->
+				</section>
+			</div>
+		</div>
+	</div>
+	<hr>
+	<!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <ul class="list-inline text-center">
+                        <li>
+                            <a href="https://www.facebook.com/profile.php?id=100000575429188" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/hyukjae89" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted">Copyright &copy; Your Website 2014</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

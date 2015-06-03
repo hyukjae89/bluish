@@ -1,0 +1,103 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+	<link href='http://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
+	<script>
+		function bookmarksite(title, url) {
+			// firefox
+			if (window.sidebar){ 
+				window.sidebar.addPanel(title, url, "");
+			}
+			// opera
+			else if (window.opera && window.print){
+				var elem = document.createElement('a');
+				elem.setAttribute('href', url);
+				elem.setAttribute('title', title);
+				elem.setAttribute('rel', 'sidebar');
+				elem.click();
+			}
+			
+			else if(window.chrome){
+				alert("크롬 브라우저는 지원하지 않습니다.                                         Ctrl+D 키를 눌러서 추가해 주세요.")
+			}
+			// ie
+			else {
+				window.external.AddFavorite(url, title);
+			}
+		}
+	</script>
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+</head>
+<body>
+	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	
+	<div id="header_space">
+		<div id="header_top"></div>
+		<div id="header_title">
+			<div id="header_title_content">
+				<font size="7px;" style="color: white;">Quality is more important than quantity</font><br><br>
+				<font style="color: white;">Steve Jobs</font>
+			</div>
+		</div>
+		<div id="header_top_bar">
+			<div id="header_top_bar_content">
+				<nav id="nav_set">
+					<ul>
+						<li>
+							<a href="javascript:bookmarksite('Bluish, 권혁재 포트폴리오', 'http://www.bluish.pe.kr/')">
+							<font size="4px" style="color: white;">즐겨찾기</font>
+							</a>
+						</li>
+					</ul>
+				</nav>
+				<c:choose>
+				<c:when test="${not empty sessionScope.idKey}">
+				<nav id="nav_login">
+					<ul>
+						<li>
+							<a href="memberlogout">
+							<font size="4px" style="color: white">로그아웃</font>
+							</a>
+						</li>
+					</ul>
+				</nav>
+				</c:when>
+				<c:otherwise>
+				<nav id="nav_login">
+					<ul>
+						<li>
+							<a href="memberlogin">
+							<font size="4px" style="color: white">로그인</font>
+							</a>
+						</li>
+					</ul>
+					</nav>
+				</c:otherwise>
+				</c:choose>
+			</div>
+		</div>
+		
+		<div id="header_bottom">
+			<div id="header_menu_list">
+				<ul>
+					<li><a href="profile"><font size="5px;" style="color: black">프로필</font></a></li>
+					<li><a href="board"><font size="5px;" style="color: black">게시판</font></a></li>
+					<li><a href="portfolio"><font size="5px;" style="color: black">포트폴리오</font></a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="black_bar">
+		
+		</div>
+	</div>
+</body>
+</html>

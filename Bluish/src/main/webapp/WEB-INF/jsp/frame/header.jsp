@@ -1,187 +1,46 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
-	<link href='http://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
-	<script>
-		function bookmarksite(title, url) {
-			// firefox
-			if (window.sidebar){ 
-				window.sidebar.addPanel(title, url, "");
-			}
-			// opera
-			else if (window.opera && window.print){
-				var elem = document.createElement('a');
-				elem.setAttribute('href', url);
-				elem.setAttribute('title', title);
-				elem.setAttribute('rel', 'sidebar');
-				elem.click();
-			}
-			
-			else if(window.chrome){
-				alert("크롬 브라우저는 지원하지 않습니다.                                         Ctrl+D 키를 눌러서 추가해 주세요.")
-			}
-			// ie
-			else {
-				window.external.AddFavorite(url, title);
-			}
-		}
-	</script>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
-	<style>
-		#header_space{
-			height:420px;
-			background-color: black;
-		}
-		
-		/* 1 */
-		#header_top{
-			height: 350px;
-			width: 100%;
-			margin: 0 auto;
-			background-image: url("../../../resources/images/main/toppic.jpg");
-			opacity: 0.5;
-		}
-		#header_top_bar{
-			position: absolute;
-			top:0;
-			left:0;
-			width: 100%;
-			height: 50px;
-		}
-		#header_top_bar_content{
-			position: relative;
-			width: 960px;
-			height: 30px;
-			margin: 0 auto;
-		}
-		#nav_set {
-			position: absolute;
-			left: 0;
-		}
-		#nav_set > ul > li { 
-			padding: 10px 10px;
-			cursor: pointer;
-		}
-		#nav_login{
-			position: absolute;
-			right: 0;
-		}
-		#nav_login > ul > li { 
-			padding: 10px 10px;
-			cursor: pointer;
-		}
-		
-		#header_title{
-			position: absolute;
-			top:0;
-			left:0;
-			width: 100%;
-			height: 350px;
-		}
-		#header_title_content{
-			width: 960px;
-			height: 220px;
-			margin: 0 auto;
-			padding-top: 130px;
-			text-align: center;
-		}
-		
-		/* 2 */
-		#header_bottom{
-			height: 60px;
-			background-color: #FFFFFF;
-		}
-		#header_menu_list{
-			width: 960px;
-			height: 100%;
-			margin: 0 auto;
-		}
-		#header_menu_list > ul > li{
-			float: left;
-			display: block;
-			cursor: pointer;
-			
-			padding-top: 15px;
-			padding-left: 30px;
-		}
-		#header_menu_list > ul > li:FIRST-CHILD{
-			padding-left: 10px;
-		}
-		#header_menu_list > ul > li > a:VISITED{
-			color: black;
-		}
-		/* 3 */
-		#black_bar{
-			height: 10px;
-			background-color: black;
-		}
-	</style>
+	<!-- Bootstrap Core CSS -->
+	<link href="../../../resources/css/bootstrap.min.css" rel="stylesheet">
 	
+	<!-- Custom CSS -->
+	<link href="../../../resources/css/clean-blog.min.css" rel="stylesheet">
+	
+	<!-- Custom Fonts -->
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> 
+	<link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'> 
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+	
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>	
 </head>
 <body>
-	<div id="header_space">
-		<div id="header_top"></div>
-		<div id="header_title">
-			<div id="header_title_content">
-				<font size="7px;" style="color: white;">Quality is more important than quantity</font><br><br>
-				<font style="color: white;">Steve Jobs</font>
-			</div>
-		</div>
-		<div id="header_top_bar">
-			<div id="header_top_bar_content">
-				<nav id="nav_set">
-					<ul>
-						<li>
-							<a href="javascript:bookmarksite('Bluish, 권혁재 포트폴리오', 'http://www.bluish.pe.kr/')">
-							<font size="4px" style="color: white;">즐겨찾기</font>
-							</a>
-						</li>
-					</ul>
-				</nav>
-				<c:choose>
-				<c:when test="${not empty sessionScope.idKey}">
-				<nav id="nav_login">
-					<ul>
-						<li>
-							<a href="memberlogout">
-							<font size="4px" style="color: white">로그아웃</font>
-							</a>
-						</li>
-					</ul>
-				</nav>
-				</c:when>
-				<c:otherwise>
-				<nav id="nav_login">
-					<ul>
-						<li>
-							<a href="memberlogin">
-							<font size="4px" style="color: white">로그인</font>
-							</a>
-						</li>
-					</ul>
-					</nav>
-				</c:otherwise>
-				</c:choose>
-			</div>
-		</div>
-		
-		<div id="header_bottom">
-			<div id="header_menu_list">
-				<ul>
-					<li><a href="profile"><font size="5px;" style="color: black">프로필</font></a></li>
-					<li><a href="board"><font size="5px;" style="color: black">게시판</font></a></li>
-					<li><a href="portfolio"><font size="5px;" style="color: black">포트폴리오</font></a></li>
-				</ul>
-			</div>
-		</div>
-		<div id="black_bar">
-		
-		</div>
-	</div>
+	<script src="../../../resources/js/jquery.min.js"></script>
+	<script src="../../../resources/js/bootstrap.min.js"></script>
+	<script src="../../../resources/js/clean-blog.min.js"></script>
+	
+
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="site-heading">
+                        <h1>Bluish</h1>
+                        <hr class="small">
+                        <span class="subheading">Bluish for my portfolio</span>
+                    </div>
+                </div>
+            </div>
+        </div>
 </body>
 </html>

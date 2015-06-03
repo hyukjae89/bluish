@@ -59,3 +59,6 @@
 2015-04-12 22:58:07,010 ERROR [Worker-15] - System.err - [Fatal Error] :6:125: XML 문서 구조는 동일한 엔티티에서 시작되고 끝나야 합니다.
 2015-04-13 20:00:43,808 ERROR [Worker-11] - System.err - [Fatal Error] :104:14: 주석에서는 "--" 문자열이 허용되지 않습니다.
 2015-04-13 20:00:46,403 ERROR [Worker-11] - System.err - [Fatal Error] :104:14: 주석에서는 "--" 문자열이 허용되지 않습니다.
+2015-05-10 12:18:49,976 ERROR [main] - System.err - [Fatal Error] :1:2: 문서에서 루트 요소 앞에 오는 마크업은 올바른 형식이어야 합니다.
+2015-05-10 12:18:54,915 ERROR [main] - System.err - [Fatal Error] :1:2: 문서에서 루트 요소 앞에 오는 마크업은 올바른 형식이어야 합니다.
+2015-05-10 12:18:54,920 ERROR [main] - System.err - [Fatal Error] :1:2: 문서에서 루트 요소 앞에 오는 마크업은 올바른 형식이어야 합니다.
